@@ -33,8 +33,9 @@ queue_t *q_new()
 /* Free all storage used by queue */
 void q_free(queue_t *q)
 {
-    /* How about freeing the list elements and the strings? */
+     /* How about freeing the list elements and the strings? */
     /* Free queue structure */
+    /* Done by Sameed Qureshu */
     free(q);
 }
 
@@ -90,7 +91,7 @@ bool q_remove_head(queue_t *q, char *sp, size_t bufsize)
 /*
   Return number of elements in queue.
   Return 0 if q is NULL or empty
- */
+ *
 int q_size(queue_t *q)
 {
     /* You need to write the code for this function */
